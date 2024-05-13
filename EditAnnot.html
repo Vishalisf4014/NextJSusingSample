@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>PDF VIEWER</title>
-	<link href="https://cdn.syncfusion.com/ej2/25.2.3/material.css" rel="stylesheet">
+	<link href="https://cdn.syncfusion.com/ej2/22.1.39/material.css" rel="stylesheet">
     <!-- Essential JS 2 PDF Viewer's global script -->
-    <script src="./ej2.min.js" type="text/javascript"></script>
+    <script src="./ej2.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -21,20 +21,18 @@
         
 		// serviceUrl: 'https://localhost:44309/pdfviewer',
         resourceUrl : "https://cdn.syncfusion.com/ej2/23.2.6/dist/ej2-pdfviewer-lib",
-		documentPath: 'PDF_Succinctly.pdf',
+		// documentPath: 'PDF_Succinctly.pdf',
         // enableAnnotation : false,
         
 	});
-//     viewer.freeTextSettings = {
-//     borderWidth: 1,
-//     borderColor: '#000',
-//     fillColor: 'rgba(50,149,96,0.5)',
-//     author: 'author',
-//     defaultText: 'Type Here'
-//   };
+    viewer.freeTextSettings = {
+    borderWidth: 1,
+    borderColor: '#000',
+    fillColor: 'rgba(50,149,96,0.5)',
+    author: 'author',
+    defaultText: 'Type Here'
+  };
 viewer.appendTo("#pdfViewer");
-
-
 
 
 </script>      
